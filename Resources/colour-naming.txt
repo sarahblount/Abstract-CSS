@@ -1,0 +1,5 @@
+/ ** A naming convention for sass colour variables as described by David walsh **/
+
+http://davidwalsh.name/sass-color-variables-dont-suck
+
+http://chir.ag/projects/name-that-color/#6195ED
