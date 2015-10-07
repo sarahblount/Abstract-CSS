@@ -1,7 +1,7 @@
 # Abstract CSS
-A simple CSS framework using ITCSS methodlogy.
+A simple CSS framework using ITCSS methodology.
 
-It is intended to work as a boilerplate for starting modular builds swifly and is perfect for managing scalability.
+It is intended to work as a boilerplate for starting modular builds swifly and is ideal for managing beautiful scalable UI architecture.
 
 # How it works
 
