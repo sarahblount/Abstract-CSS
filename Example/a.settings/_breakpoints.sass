@@ -4,8 +4,19 @@
 // This file assigns gloablly used breapoints for media queries to variables
 // --------------------------------------------------------------------------
 
-$baby-bear: $480px
+//***********************************
+// breakpoint variables
+//***********************************
 
-$mama-bear: $768px
+$breakpoints: (baby-bear: 480px, mama-bear: 768px, papa-bear: 1080px)
 
-$papa-bear: $1080px
+//***********************************
+// breakpoint mixin
+//***********************************
+
+=bp($name)
+    @if not map-has-key($breakpoints, $name)
+        @warn "Warning: `#{$name}` is not a valid breakpoint name."
+    @else
+        @media (max-width: map-get($breakpoints, $name))
+            @content

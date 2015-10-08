@@ -1,0 +1,24 @@
+// --------------------------------------------------------------------------
+// grid.sass
+// --------------------------------------------------------------------------
+// This file creates a mixin for a beautiful border box grid system
+// --------------------------------------------------------------------------
+
+//***********************************
+// grid variables
+//***********************************
+
+$container-width: 1280px
+$column-count: 12
+$gutter-width: 20px
+$column-width: ($container-width - $column-count * $gutter-width) / $column-count
+
+//***********************************
+// column mixin
+//***********************************
+
+=col($i)
+    box-sizing: border-box
+    float: left
+    width: percentage($column-width * $i / $container-width)
+    padding: 0 ($gutter / 2)
