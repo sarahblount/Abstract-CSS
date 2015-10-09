@@ -9,8 +9,6 @@ Abstract CSS imports sass files in layers of specificity, starting with the most
 
 Each file sits in a folder ordered from A to E.
 
-Within each folder, files are numerically ordered for increased organisation of your project.
-
 <b>A) Settings</b> - Global variables that could be used anywhere. No CSS output.<br />
 <b>B) Tools</b> - Global utilities that could be used anywhere. No CSS output.<br />
 <b>C) Generic</b> - Base styling. First CSS to be output.<br />
@@ -20,24 +18,23 @@ Within each folder, files are numerically ordered for increased organisation of 
 
 # Example structure
 - a.settings
-  - 1.globals
-  - 2.colours
-  - 3.breakpoints
+  - globals
+  - colours
+  - breakpoints
 - b.tools
-  - 1.grid
-  - 2.mixins
-  - 2.animations
+  - grid
+  - utilities
 - c.generic
-  - 1.reset
-  - 2.typography
-  - 3.buttons
+  - reset
+  - typography
+  - buttons
 - d.objects
-  - 1.layout
+  - layout
 - e.modules
-  - 1.header
-  - 2.primary-nav
-  - 3.feature-block
-  - 4.search-panel
+  - header
+  - primary-nav
+  - feature-block
+  - search-panel
 - f.exclusive
-  - 1.registration-page
+  - registration-page
    

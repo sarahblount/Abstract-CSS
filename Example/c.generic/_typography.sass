@@ -1,0 +1,22 @@
+// --------------------------------------------------------------------------
+// typography.sass
+// --------------------------------------------------------------------------
+// This file assigns gloablly used breapoints for media queries to variables
+// --------------------------------------------------------------------------
+
+//***********************************
+// breakpoint variables
+//***********************************
+
+$breakpoints: (baby-bear: 480px, mama-bear: 768px, papa-bear: 1080px)
+
+//***********************************
+// breakpoint mixin
+//***********************************
+
+=bp($name)
+    @if not map-has-key($breakpoints, $name)
+        @warn "Warning: `#{$name}` is not a valid breakpoint name."
+    @else
+        @media (max-width: map-get($breakpoints, $name))
+            @content

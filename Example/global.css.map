@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAcQ,8DAAsD",
-"sources": ["a.settings/_fonts.sass"],
+"mappings": "AAcQ,8DAAsD;ACZ9D,IAAI;EACA,oBAAoB,EAAE,IAAI;EAC1B,wBAAwB,EAAE,IAAI;;AAElC;;;;;;;CAAK;EAQD,MAAM,EAAE,CAAC;;AAEb;;;;;;;;;;;;OAAQ;EAaJ,OAAO,EAAE,KAAK;;AAElB;;;KAAM;EAIF,OAAO,EAAE,YAAY;EACrB,cAAc,EAAE,QAAQ;;AAI5B,KAAK;EACD,eAAe,EAAE,QAAQ;EACzB,cAAc,EAAE,CAAC;;AAErB;EAAG;EAEC,OAAO,EAAE,CAAC",
+"sources": ["a.settings/_fonts.sass","c.generic/_reset.sass"],
 "names": [],
 "file": "global.css"
 }
