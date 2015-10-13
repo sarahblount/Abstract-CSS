@@ -1,7 +1,7 @@
 // --------------------------------------------------------------------------
 // grid.sass
 // --------------------------------------------------------------------------
-// This file creates a mixin for a beautiful border box grid system
+// This file creates a mixin for multiple grid system options
 // --------------------------------------------------------------------------
 
 //***********************************
@@ -11,10 +11,10 @@
 $container-width: 1280px
 $column-count: 12
 $gutter-width: 20px
-$column-width: ($container-width - $column-count * $gutter-width) / $column-count
+$column-width: $container-width / $column-count
 
 //***********************************
-// column mixin
+// float column mixin
 //***********************************
 
 =col($i)
@@ -22,3 +22,22 @@ $column-width: ($container-width - $column-count * $gutter-width) / $column-coun
     float: left
     width: percentage($column-width * $i / $container-width)
     padding: 0 ($gutter / 2)
+
+//***********************************
+// flex column mixin
+//***********************************
+
+=flex-grid
+	display: flex
+
+=flex-col($i:"")
+	@if $i == "" 
+		flex-grow: 1
+	@else
+		width: percentage($column-width * $i / $container-width)
+	
+/*.grid__column 
+	+flex-col;
+	@for $i from 1 through $column-count
+  		&--#{$i}
+    		+flex-col($i)*/
